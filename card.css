@@ -1,0 +1,108 @@
+#card {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+#card-front,
+#card-back {
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 15px;
+	width: calc(3.5*96px);
+	height: calc(2.0*96px);
+	background-color: #fff;
+	font-size: .7rem;
+	display: inline-block;
+	margin: 0;
+	padding: 3px;
+}
+
+#card-front:hover,
+#card-back:hover {
+	outline: 2px solid #ccc;
+	box-shadow: 2px 2px #333;
+	cursor: pointer;
+}
+
+#card_checkbox {
+	display: none;
+}
+#card_checkbox + label > div {
+	display: block;
+}
+#card_checkbox + label > div + div {
+	display: none;
+}
+#card_checkbox:checked + label > div {
+	display: none;
+}
+#card_checkbox:checked + label > div + div {
+	display: block;
+}
+
+#card-front ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#card-front ul > li {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#card-back h1 {
+	margin: 0;
+	font-size: .9rem;
+	border-bottom: 2px outset black;
+	margin-bottom: 5px;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+#card-back ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#card-back ul ul {
+	list-style: square;
+	margin: 0;
+	padding: 0;
+}
+
+#card-back ul > li {
+	margin-left: .66rem;
+	font-weight: bold;
+	padding-bottom: 1px;
+}
+
+#card-back ul ul > li {
+	margin-left: 1.5rem;
+	font-weight: normal;
+	padding-bottom: 1px;
+}
+
+
+#card-front h1 {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 2px;
+}
+#card-front h2 {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 2px;
+}
+#card-front h3 {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 2px;
+}
